@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.13'
-gem 'sqlite3'
+gem 'pg'
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
@@ -10,6 +10,7 @@ gem 'json'
 
 group :development do
 	gem 'rspec-rails'
+	gem 'sqlite3'
 end
 
 group :assets do
