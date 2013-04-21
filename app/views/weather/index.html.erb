@@ -1,0 +1,5 @@
+<h3>Enter an American State Zipcode to check its local weather conditions</h3>
+<%= simple_form_for @weather, :url => query_path, :method => 'get' do |f| %>
+	<%= f.input :zipcode, :label => 'Enter Zipcode' %>
+	<%= f.submit "Submit", :class => 'btn btn-success', :disable_with => 'Submitting...' %>
+<% end %>

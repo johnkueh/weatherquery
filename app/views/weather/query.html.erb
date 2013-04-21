@@ -1,0 +1,17 @@
+<div class="span12">
+	<h3>Weather for <%= @full_name %> <%= @zip_code %></h3>
+</div>
+
+<div class="span3">
+	<%= image_tag "http://maps.googleapis.com/maps/api/staticmap?center=#{@full_name}&zoom=10&size=300x300&maptype=roadmap&sensor=false" %>
+</div>
+
+<div class="span5">
+	<div class="well">
+		<p>
+			<strong>City:</strong> <%= @city_name %><br />
+			<strong>State:</strong> <%= @state_name %><br />
+			<strong>Temperature:</strong> <%= @temp %> Fahrenheit
+		</p>
+	</div>
+</div>
